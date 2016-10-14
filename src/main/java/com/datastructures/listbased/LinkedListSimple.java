@@ -1,14 +1,14 @@
-package com.datastructures.ListBased;
+package com.datastructures.listbased;
 
 /**
  * Created by davidchains on 10/13/16.
  */
-public class LinkedList {
+public class LinkedListSimple {
 
     private static int counter;
     private Node head;
 
-    public LinkedList() {}
+    public LinkedListSimple() {}
 
     /*
     *
