@@ -1,2 +1,2 @@
 # Data-Structures-Algorithms
-Self Study Examples about Data Structures and Algorithms from Scrach on Java
+Self Study Examples about Data Structures and Algorithms from Scrach on Java and Python
