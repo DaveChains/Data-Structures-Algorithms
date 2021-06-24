@@ -5,23 +5,20 @@ package com.datastructures.Algorithms;
  */
 import java.util.*;
 
-public class MergeSort
-{
-//    public static void main(String[] args)
-//    {
-//        //Unsorted array
-//        Integer[] a = { 2, 6, 3, 5, 1 };
-//
-//        //Call merge sort
-//        mergeSort(a);
-//
-//        //Check the output which is sorted array
-//        System.out.println(Arrays.toString(a));
-//    }
+public class MergeSort {
+    public static void main(String[] args) {
+        //Unsorted array
+        Integer[] a = { 2, 6, 3, 5, 1 };
+
+        //Call merge sort
+        mergeSort(a);
+
+        //Check the output which is sorted array
+        System.out.println(Arrays.toString(a));
+    }
 
     @SuppressWarnings("rawtypes")
-    public static Comparable[] mergeSort(Comparable[] list)
-    {
+    public static Comparable[] mergeSort(Comparable[] list){
         //If list is empty; no need to do anything
         if (list.length <= 1) {
             return list;
