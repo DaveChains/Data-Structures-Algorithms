@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 class ValidAnagram(object):
     def is_valid_anagram(self, s: str, t: str) -> bool:
         sdict = {}
@@ -46,8 +49,45 @@ class ValidAnagram(object):
         for k in sDict.keys():
             if sDict.get(k) != tDict.get(k, 0):
                 return False
+        return True
+
+
+
+    def isAnagram3(self, s: str, t: str) -> bool:
+        # mapS = Counter(s)
+        # print(mapS)
+        mapS = {}
+        mapR = {}
+        for c in s:
+            mapS[c] = mapS.get(c, 0) + 1
+
+        for c in t:
+            mapR[c] = mapR.get(c, 0) + 1
+
+        for k, v in mapS.items():
+            if mapR.get(k, 0) != v:
+                return False
 
         return True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,5 +97,5 @@ test1 = ValidAnagram()
 # print(test1.is_valid_anagram("cat", "rat"))
 
 
-print(test1.isAnagram("anagram", "nagaram"))
-print(test1.isAnagram("cat", "rat"))
+print(test1.isAnagram3("anagram", "nagaram"))
+print(test1.isAnagram3("cat", "rat"))
